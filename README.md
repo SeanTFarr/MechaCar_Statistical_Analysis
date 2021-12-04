@@ -8,28 +8,41 @@ In this we are looking at 4 things:
 ## Linear Regression to Predict MPG
 <img src=Images\linregres.png>
 
-- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+**Q:** Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-- Is the slope of the linear model considered to be zero? Why or why not?
+**A:** Both vehicle length and ground cleaarance appear to provide a non-random amount of variance to mpg
 
-- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+**Q:** Is the slope of the linear model considered to be zero? Why or why not?
+
+**A:** No, the slope would not be considered zero because there is not a constant relationship between x and y. The P-value is well below the significance level.
+
+**Q:** Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+
+**A:** With the R-Squared value being 0.7149, this model does predict the mpg of the prototypes effectively.
 
 
 ## Summary Statistics on Suspension Coils
 
-total_summary
+This total summary dataframe shows the mean, median, variance, and standard deviation of all lots.
+
 <img src=Images\total_summary.png>
 
-lot_summary
+The lot summary dataframe below shows the same metrics divided by lot
+
 <img src=Images\lot_summary.png>
 
-- The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
+
+**Q:** With that in mind, does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+**A:** The totalsummary dataframe shows that across all lots, as a whole, the coils meet the design specifications of within 110 PSI(total variance = 62.29). However, when you break it down by lots, lot 1 and lot 2 are well within range at 0.98 and 7.47 variance respectively. But Lot 3 has an excessive 170.87 variance, well above the accepted design specifications.
 
 ## T-Tests on Suspension Coils
 
-T-test on all
+A t-test was perfomed to determine if the PSI across all manufacturing lots is statistically diffferent from the population mean of 1,500 pounds per square inch. Then follow up t-tests were performed on the individual lots.
 
 <img src=Images\t-test.png>
+
 
 
 Lot 1
