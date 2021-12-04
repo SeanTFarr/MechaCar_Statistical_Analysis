@@ -25,6 +25,11 @@ lot_summary
 
 ## T-Tests on Suspension Coils
 
+T-test on all
+
+<img src=Images\t-test.png>
+
+
 Lot 1
 
 <img src=Images\Lot1.png>
