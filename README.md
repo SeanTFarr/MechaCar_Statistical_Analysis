@@ -35,11 +35,11 @@ Note: The design specifications for the MechaCar suspension coils dictate that t
 
 **Q:** With that in mind, does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-**A:** The totalsummary dataframe shows that across all lots, as a whole, the coils meet the design specifications of within 110 PSI(total variance = 62.29). However, when you break it down by lots, lot 1 and lot 2 are well within range at 0.98 and 7.47 variance respectively. But Lot 3 has an excessive 170.87 variance, well above the accepted design specifications.
+**A:** The total summary dataframe shows that across all lots, as a whole, the coils meet the design specifications of within 100 PSI(total variance = 62.29). However, when you break it down by lots, lot 1 and lot 2 are well within range at 0.98 and 7.47 variance respectively, but Lot 3 has an excessive 170.87 variance, well above the expected design specifications.
 
 ## T-Tests on Suspension Coils
 
-A t-test was perfomed to determine if the mean of the PSI across all manufacturing lots is statistically diffferent from the population mean of 1,500 pounds per square inch. Then follow up t-tests were performed on the individual lots.
+A t-test was perfomed to determine if the mean of the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch. Then follow up t-tests were performed on the individual lots.
 
 All lots:
 
@@ -72,20 +72,20 @@ Lot 3 on the other han has a p-value of 0.042, which is below the significance l
 
 There are many factors that a consumer looks at when considering which vehicle to buy, most of them are connected to $$$. One of those factors are printed and on a sheet that is attached to every vehicle on the show room. We briefly looked at the MPG of the prototypes based on certain variables, but how does MechaCar's City and Highway MPG compare with the competition?
 
-What metrics to test? 
+**What metrics to test?** 
 
 Both City and Highway Miles per Gallon on vehicles of comparable weight and number of cylinders in the engine.
 
-What is the null hypothesis and alternative hypothesis?
+**What is the null hypothesis and alternative hypothesis?**
 
 H₀= There is no statistical difference between MechaCar's MPG and their competitors MPG when measuring like weights and number of cylinders.
 
 Hₐ=There is a statistical difference between MechaCar's MPG and their competitors MPG when measuring like weights and number of cylinders.
 
-What statistical test to test the hypothesis? 
+**What statistical test to test the hypothesis?**
 
 A two sample t-test would be used to measure to see if there is a statistical difference between the samples.
 
-What data is needed to run the statistical test?
+**What data is needed to run the statistical test?**
 
 We would need data from all of MechaCar's competitors that included the vehicle's weight, number of cylinders, highway MPG, and city MPG.
