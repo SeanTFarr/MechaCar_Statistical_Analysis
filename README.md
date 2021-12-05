@@ -39,31 +39,53 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 ## T-Tests on Suspension Coils
 
-A t-test was perfomed to determine if the PSI across all manufacturing lots is statistically diffferent from the population mean of 1,500 pounds per square inch. Then follow up t-tests were performed on the individual lots.
+A t-test was perfomed to determine if the mean of the PSI across all manufacturing lots is statistically diffferent from the population mean of 1,500 pounds per square inch. Then follow up t-tests were performed on the individual lots.
+
+All lots:
 
 <img src=Images\t-test.png>
 
+The t-test on all lots shows the means are  similar to the population mean of 1,500, with the 0.06 p-value being just above the significance level of 0.05, so no statistical difference
 
 
-Lot 1
+
+Lot 1:
 
 <img src=Images\Lot1.png>
 
-Lot 2
+Lot 1 has a p-value of 1, so it has a mean that is similar to the population mean. No statistical difference.
+
+Lot 2:
 
 <img src=Images\Lot2.png>
 
-Lot 3
+Lot 2 also has a mean that is similar to the population mean(p-value=.61), so no statistical difference
+
+Lot 3:
 
 <img src=Images\Lot3.png>
+
+Lot 3 on the other han has a p-value of 0.042, which is below the significance level 0.05. There is a statistical difference.
 
 
 ## Study Design: MechaCar vs Competition
 
-- What metric or metrics are you going to test?
+There are many factors that a consumer looks at when considering which vehicle to buy, most of them are connected to $$$. One of those factors are printed and on a sheet that is attached to every vehicle on the show room. We briefly looked at the MPG of the prototypes based on certain variables, but how does MechaCar's City and Highway MPG compare with the competition?
 
-- What is the null hypothesis or alternative hypothesis?
+What metrics to test? 
 
-- What statistical test would you use to test the hypothesis? And why?
+Both City and Highway Miles per Gallon on vehicles of comparable weight and number of cylinders in the engine.
 
-- What data is needed to run the statistical test?
+What is the null hypothesis and alternative hypothesis?
+
+H₀= There is no statistical difference between MechaCar's MPG and their competitors MPG when measuring like weights and number of cylinders.
+
+Hₐ=There is a statistical difference between MechaCar's MPG and their competitors MPG when measuring like weights and number of cylinders.
+
+What statistical test to test the hypothesis? 
+
+A two sample t-test would be used to measure to see if there is a statistical difference between the samples.
+
+What data is needed to run the statistical test?
+
+We would need data from all of MechaCar's competitors that included the vehicle's weight, number of cylinders, highway MPG, and city MPG.
